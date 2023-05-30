@@ -14,12 +14,12 @@ for (let j = 0; j < 5; j++) {
 
       studentName = prompt("Nhập tên sinh viên (từ 6 đến 30 ký tự): ");
       while (!(studentName.length >= 6 && studentName.length <= 30)) {
-            studentName = prompt(" Quá ký tự cho phép. Vui lòng nhập lại: ");
+            studentName = prompt(" Sai số lượng ký tự cho phép. Vui lòng nhập lại: ");
       }
 
       age = Number(prompt("Vui lòng nhập tuổi: "));
       while (!(age >= 18 && age <= 30)) {
-            age = prompt(" Quá ký tự cho phép. Vui lòng nhập lại: ");
+            age = prompt(" Sai số tuổi quy định. Vui lòng nhập lại: ");
       }
 
       mark_html = parseFloat(
