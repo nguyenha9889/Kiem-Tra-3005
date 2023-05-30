@@ -2,7 +2,7 @@
 const arrStudents = [];
 const student = [];
 let codeStudent, fullName, age, mark_html, mark_css, mark_js, avgMark, rank;
-for (let j = 0; j < 2; j++) {
+for (let j = 0; j < 5; j++) {
       codeStudent = prompt(
             "Nhập mã sinh viên (5 ký tự và bắt đầu bằng chữ S): "
       );
