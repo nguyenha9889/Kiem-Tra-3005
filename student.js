@@ -1,20 +1,20 @@
 // Khởi tạo mảng 2 chiều sinh viên và nhập 5 sinh viên
 const arrStudents = [];
 const student = [];
-let codeStudent, fullName, age, mark_html, mark_css, mark_js, avgMark, rank;
+let studentId, studentName, age, mark_html, mark_css, mark_js, avgMark, rank;
 for (let j = 0; j < 5; j++) {
-      codeStudent = prompt(
+      studentId = prompt(
             "Nhập mã sinh viên (5 ký tự và bắt đầu bằng chữ S): "
       );
-      while (!(codeStudent.length == 5 && codeStudent.startsWith("S"))) {
-            codeStudent = prompt(
+      while (!(studentId.length == 5 && studentId.startsWith("S"))) {
+            studentId = prompt(
                   "Mã sinh viên chưa đúng định dạng. Vui lòng nhập lại: "
             );
       }
 
-      fullName = prompt("Nhập tên sinh viên (từ 6 đến 30 ký tự): ");
-      while (!(fullName.length >= 6 && fullName.length <= 30)) {
-            fullName = prompt(" Quá ký tự cho phép. Vui lòng nhập lại: ");
+      studentName = prompt("Nhập tên sinh viên (từ 6 đến 30 ký tự): ");
+      while (!(studentName.length >= 6 && studentName.length <= 30)) {
+            studentName = prompt(" Quá ký tự cho phép. Vui lòng nhập lại: ");
       }
 
       age = Number(prompt("Vui lòng nhập tuổi: "));
@@ -41,8 +41,8 @@ for (let j = 0; j < 5; j++) {
 
       avgMark = "" ;
       rank = "";
-      student.push(codeStudent,
-            fullName,
+      student.push(studentId,
+            studentName,
             age,
             mark_html,
             mark_css,
